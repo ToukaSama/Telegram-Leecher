@@ -1,9 +1,7 @@
 # copyright 2023 © Xron Trix | https://github.com/Xrontrix10
-import asyncio
-import sys
-
-if sys.version_info >= (3, 10):
-    asyncio.set_event_loop_policy(asyncio.DefaultEventLoopPolicy())
+!pip install nest_asyncio
+!pip install libtorrent
+!sudo apt-get install -y mkvtoolnix
 
 # @title 🖥️ Main Colab Leech Code
 
