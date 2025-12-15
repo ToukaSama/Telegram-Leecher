@@ -15,7 +15,15 @@ BOT_TOKEN = ""  # @param {type: "string"}
 USER_ID = 0  # @param {type: "integer"}
 DUMP_ID = 0  # @param {type: "integer"}
 
+import asyncio
+import nest_asyncio
 
+nest_asyncio.apply()
+
+try:
+    asyncio.get_event_loop()
+except RuntimeError:
+    asyncio.set_event_loop(asyncio.new_event_loop())
 import subprocess, time, json, shutil, os
 from IPython.display import clear_output
 from threading import Thread
